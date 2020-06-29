@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chapter2</title>
+<link rel="stylesheet" href="styles2.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function() { // do not delete this line
+$('.poseidon').hide(); 		
+$('.aud').hide();
+$('#paracontainerimg').hide();
+$('#paracontainerimg').fadeIn(3000);
+
+	$('#vdo1').on('ended', function() { // event handler which lets the browser know what to do upon the end of video 1
+	  $('.poseidon').show(); //  no longer hidden
+	  target = $('.poseidon').position().top; // the positionis stored in a variable to be used later
+	  $('html,body').stop().animate({ scrollTop: target }, { duration: 500}); // 'stop' halts any current animation going on, this event handler scrolls to the hidden content
+	})
+	$('#vdo1').on('timeupdate', function() { //event handler which tells the browser to count the time after vdo2 starts playing
+			var playTime = Math.round( $(this).get(0).currentTime ); // the time value is stored as a variable in 'playTime', the Math.round function rounds up the value of the currentTime
+			if(playTime == 3) { //if vdo time is 3 secs
+				$('#banner').fadeIn(200); //the banner pops in
+			}
+			if(playTime == 6) { //if vdo time is 6 secs
+				$('#banner').fadeOut(200); // banner fades out
+			}
+		});
+    $('.chapter2').mouseenter(function() {
+        $('figcaption').stop().slideUp(100);
+        $(this).find('figcaption').stop().slideDown('slow');    
+    });
+    
+    $('.chapter2').mouseleave(function() {
+        $('figcaption').stop().slideUp(100);
+    });
+
+        $('#paracontainer3').mouseenter(function() {
+        $('.aud').stop().slideUp(100);
+        $(this).find('.aud').stop().slideDown('slow');
+        $(this).find('.aud').play();
+        $('#paracontainer img').fadeIn(2000);    
+    });
+
+}); // do not delete this line
+</script>
+
+</head>
+<body>   
+	<header>
+	<h1>Chapter 2</h1> 
+	</header> 
+<div id = 'banner'>
+	<p> City of Atlanta. (Watch till the end or the hidden part will not show).
+</div>
+	<div class= 'navbar'>
+		<ul>  
+			<li><a href="index.html"><i class="fa fa-bolt" aria-hidden="true">Chapter:1</i></a></li>
+			<li><a href="chapter2.html"><i class="fa fa-tint" aria-hidden="true">Chapter:2</i></a> </li>
+			<li><a href="chapter3.html"><i class="fa fa-tree" aria-hidden="true">Chapter:3</i></a></li>
+			<li><a href="chapter4.html"><i class="fa fa-area-chart" aria-hidden="true">Chapter:4</i></a></li>
+			<li><a href="chapter5.html"><i class="fa fa-bolt" aria-hidden="true">Chapter:5</i></a></li>
+		</ul>
+	</div>
+
+<div class = "wrapper">
+	<div class= 'chapter2'>
+		<h1> Chapter 2: The first hurdle </h1>
+		<br>
+		<br>
+	 <div id= 'paracontainerimg'>
+	 </div>
+		<div id= 'paracontainer'>
+		<p> He starts off his journey to overcome the first obstacle Zeus has provided him. After just walking a few miles he comes to a halt at a very sad sight. 
+			<div class ='imagecig'> 
+				 <p><img src = 'images/air-pollution-black-and-white-clouds-682078.jpg' alt = 'air pollution'>
+				 <figcaption> "Maybe we do deserve the wrath of the Gods" - Anim.</figcaption>
+				 <br>
+				<p> Anim shudders, he sees how much of the nature humans have taken for granted. He knows that a whole lot cannot be judged with the actions of a few. He proceeds towards his journey. His next destination is the city of Atalan where the mighty Poseidon rests. The deity is knowm to always be in a bad mood. Everything vexes him but Anim was adamant, he knew that he must be able to entice the deity so that Zeus' conditions are met.
+				<br>
+			</div>	
+	</div>
+
+	 <div id= 'paracontainer2img'>
+	 </div>	
+	<div id ='paracontainer2'>
+		<div class ='imageairpol'> 
+			 <p><img src = 'images/uniT.jpg' alt = 'mqu'>
+			 <figcaption> Entrance to Atlanta</figcaption>
+			 <br>
+			<p> He finally reaches Atlanta. The entrance to the city is beautiful and elegant. Such luscious senery, Anim felt he could just gaze at the beauty forever. But, he knows there is no time to waste for the God's judgement has the whole world in peril. He quickly asks a couple of locals about the location of 'Sei'. Sei is the place where Poseidon should be residing according to Zeus.
+			<br>
+		</div>
+	</div>	
+	 <div id= 'paracontainer3img'>
+	 </div>	
+	<div id ='paracontainer3'>
+		<video controls id = vdo1>
+				<source src = "videos/Video Footage Of City.MP4">
+		</video>		
+		<audio controls class = 'aud'>
+				<source src="audio/Poseidon.mp3 "> 
+				<p>If you are reading this, it is because your browser does not support the audio element.</p>
+		</audio>
+		<div class ='poseidon'> 
+
+			 <p><img src = 'images/poseidon.jpg' alt = 'poseidon'>
+			 <figcaption> The God of Ocean rises</figcaption>
+			 <br>
+			<p> He sets off for Sei. He gets to see majestic aquatic fishes and mammals on the way. He finds Sei and Anim calls upon the mighty God of the oceans. Poseidon rises from the sea and asks Anim how did he know that Poseidon could be found in 'Sei'. Anim tells him that it was Zeus himself. Poseidon although known for his ferocity and might was equally weak intellectually. Anim was well aware of this and he knew that Poseidon was not on talking terms with Zeus because of a little spat. He decided to bluff and trick Poseidon.
+				<br>
+				'It is by the decree of Zeus that you are commanded to calm the oceans and give mankind another chance'. <br>
+				<p> Poseidon laughs and asks Anim how dare a mortal try to trick him. A mere mortal will not be approached by Zeus to do his work. Anim then asks Poseidon if he is courageous enough to gamble with his life on this because his ego is too big for a proper reckoning. He shows Poseidon the little jar Zeus provided him and asks Poseidon to fill this with his magical water. Poseidon is in a state of shock. The grit,determination and face of Anim was of someone who knew that he is right and has Zeus' blessing. Poseidon knew his elder brother too well. He knew that if he angers the king of Gods further, he could even be decimated. Without any further talk, Poseidon fills the jar. <br>
+					<p> "Tread carefully mortal, you do not want to get involve in the matter of Gods" were Poseidons last words to Anim as the God vanished away into the depts of the ocean.
+						<p> Anim takes a sigh of relief. He actually managed to survive this and manages to get one step closer to the salvation of humanity.
+					<div class= 'next'>
+					<a href="chapter3.html">Continue..</i></a>
+				</div>
+
+		</div>
+</div>
+	</div>
+</div>	
+<footer>
+<p> Follow Anim for more stories
+	<br>
+	<br>
+<a href="http://www.snapchat.com/" class="fa fa-snapchat-ghost"></a>
+<a href="http://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="http://www.google.com/" class="fa fa-google"></a>
+<a href="http://www.linkedin.com/" class="fa fa-linkedin"></a>
+<a href="http://www.instagram.com/" class="fa fa-instagram"></a>	
+</footer>
+
+
+</body>
+</html>

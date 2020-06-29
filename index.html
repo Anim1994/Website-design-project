@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function() { // do not delete this line
+var slideIndex = 0;
+$('.navbar').hide();
+$('.navbar').fadeIn(1000);
+$('audio').hide();
+$('#paracontainer img').hide();
+$('.slideshow-container').hide();
+$('.slideshow-container').fadeIn(2000);
+    $('.imgholder').mouseenter(function() {
+        $('figcaption').stop().slideUp(100);
+        $(this).find('figcaption').stop().slideDown('slow');    
+    });
+    
+    $('.imgholder').mouseleave(function() {
+        $('figcaption').stop().slideUp(100);
+    });
+
+        $('#paracontainer').mouseenter(function() {
+        $('audio').stop().slideUp(100);
+        $(this).find('audio').stop().slideDown('slow');
+        $('#paracontainer img').fadeIn(2000);    
+    });
+
+	
+showSlides();
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+}); // do not delete this line
+</script>
+
+</head>
+<body>   
+	<header>
+	<h1>The Journey</h1> 
+	</header> 
+	<h2> Zeus has given up his hope on mankind and decides to punish them with divine justice. <br>Follow the story of a young man, as he sets out to save humanity.</h2>
+	<div class= 'navbar'>
+		<ul> 
+			<li><a href="index.html"><i class="fa fa-bolt" aria-hidden="true">Chapter:1</i></a></li>
+			<li><a href="chapter2.html"><i class="fa fa-tint" aria-hidden="true">Chapter:2</i></a> </li>
+			<li><a href="chapter3.html"><i class="fa fa-tree" aria-hidden="true">Chapter:3</i></a></li>
+			<li><a href="chapter4.html"><i class="fa fa-area-chart" aria-hidden="true">Chapter:4</i></a></li>
+			<li><a href="chapter5.html"><i class="fa fa-bolt" aria-hidden="true">Chapter:5</i></a></li>
+		</ul>
+	</div>
+
+
+<div class = "wrapper">
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 3</div>
+		  <img src="Images/1.jpeg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 3</div>
+		  <img src="Images/2.jpg" style="width:100%">
+		</div>
+
+	<div class="mySlides fade">
+	  	<div class="numbertext">3 / 3</div>
+	  	<img src="Images/3.jpg" style="width:100%">
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span>
+	   </div>
+	</div>
+
+	<div class= 'chapter1'>
+		<h1> Chapter 1: The beginning of the end? </h1>
+		<br>
+		<br>
+		<div id= 'paracontainer'>
+		<p> It is the year <strong>2018 </strong>. The future of the world is in dire crisis, the Gods are angry at humans for not taking care of the nature. Humans still continue to destroy and harm the environment for their selfish needs. The Greek God's decide to finally pour down their wrath on humans. Anim visits the temple of Zeus to plead for mercy as the storms that have been forming are merciless.
+		<p> Zeus who sits at the throne of Mount Olympus and is the king of all Greek gods tells Anim that they have lost their faith in humans. Anim asks what can he do to calm the gods and save the world.
+			<br>
+			<br>
+				<audio autoplay controls ='aud' >
+					<source src="audio/Zeus_intro.mp3 "> 
+					<p>If you are reading this, it is because your browser does not support the audio element.</p>
+				</audio>
+			Seeing the perseverance and determination of Anim, Zeus decides to give humans another chance. He tells Anim the location of four places. Each of those four places have an ancient sentient being who are angry at humans and if Anim can persuade them to forgive humans then Zeus's wrath shall stop.
+		
+			<figure class ='imgholder'>
+			 <img src = 'images/background-calm-clouds-747964.jpg' alt = 'lake view'>
+			 <figcaption> Anim sits and contemplates about the mammoth task he has undertaken.</figcaption>
+			</figure>
+			<br>
+			<br>
+			<p> Anim packs his bag with the bare minimum required to survive on the road. He knows he has to travel light and fast. He goes to his house and meets his parents, asks them for their blessings. Just when is about to open the door for the exit, his dad stops him. His father kisses him on his forehead and wraps a belt around Anim's waist. He takes it as a good luck charm and ventures forth towards the unknowing and save the world from peril. 
+				<br>
+				<br>
+				<br>
+				<div class= 'next'>
+					<a href="chapter2.html">Continue..</i></a>
+				</div>
+			</div>
+</div>
+</div>
+<footer>
+<p>  Follow Anim for more stories
+	<br>
+	<br>
+<a href="http://www.snapchat.com/" class="fa fa-snapchat-ghost"></a>
+<a href="http://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="http://www.google.com/" class="fa fa-google"></a>
+<a href="http://www.linkedin.com/" class="fa fa-linkedin"></a>
+<a href="http://www.instagram.com/" class="fa fa-instagram"></a>	
+</footer>
+
+
+</body>
+</html>

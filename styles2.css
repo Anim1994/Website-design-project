@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Special+Elite|Pacifico|Spicy+Rice|Gloria+Hallelujah');
+
+body
+{
+    margin:0;
+    padding:0;
+    background: linear-gradient(to right, rgba(250,250,250,.8)90%, rgba(249,249,240,.8) 10%);
+	background-repeat: no-repeat;
+	font-family: Arial;
+	color: midnightblue;
+
+}
+#banner{	
+	position: fixed;
+	top: 10px;
+	right: 300px;
+	color: orange;
+	font-size: 20px;
+	background-color: #222222;
+	padding: 40px;
+	display: none;
+}
+header h1{
+	color : midnightblue;
+	text-align: center;
+	margin:0;
+	font-family: 'Gloria Hallelujah', cursive;
+	padding-top: 20px;
+	background-image: url('images/hills-889131_1920.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+	h2{
+		font-size: 20px;
+		color: darkred;
+}
+
+.wrapper {
+	  padding-left:140px;
+	  background-color: white;
+}
+.next{
+	margin-left:1000px;
+}
+.active {
+  background-color: #717171;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.navbar {
+	position: fixed;
+	background: -moz-linear-gradient(left,  rgba(255,255,255,0.14) 0%, rgba(255,255,255,0.06) 100%); /* FireFox */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0.14)), color-stop(100%,rgba(255,255,255,0.06))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,0.14) 0%,rgba(255,255,255,0.06) 100%); /* Chrome*/
+	background: -ms-linear-gradient(left,  rgba(255,255,255,0.14) 0%,rgba(255,255,255,0.06) 100%); /* IE */
+	background: linear-gradient(to right,  black 20%,rgba(26,14,14,1) 30%); /* W3C */
+	color: #fff;
+	width: 140px;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+.navbar ul {
+ 	margin: 10px 0 10px 0;
+	padding: 20px;
+	list-style-type: none;
+    
+}
+
+.navbar ul li a, nav ul li a:link, nav ul li a:visited {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	padding: 50px 10px 10px 20px;
+	height:35px;
+} 
+
+.navbar ul li a:hover, nav ul li a:active {
+	background: -moz-linear-gradient(left,  rgba(255,255,255,0.82) 0%, rgba(255,255,255,0.51) 100%); /* FF3.6+ */
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,0.82) 0%,rgba(255,255,255,0.51) 100%); /* Chrome10+,Safari5.1+ */
+	color: #222;
+} 
+
+.chapter2{
+	font-weight: bold;
+	float:left;
+	margin-left: 20px;
+	color: midnightblue;
+}
+.chapter2 h1{
+	font-family: "Pacifico", cursive;
+	color: midnightblue;
+	padding: 20px;
+	color: #141F3A;
+	padding: 20px;
+	-webkit-background-clip: text;
+	animation: animateheading 5s;
+}
+
+@keyframes animateheading  {
+		from {color:#00496b;}
+		to {color: #141F3A;}
+	}
+#vdo1{
+	height: 300px;
+	width: 600px;
+	padding: 20px;
+	margin-left: 400px;
+}
+.aud {
+	right: 0;
+	bottom:0;
+	position: fixed;
+}
+.aud audio{
+	background-color: royalblue;
+}
+
+ #paracontainerimg{
+	background-color: #9CF0E5;
+	padding: 30px;
+	height: 300px;
+	width: 100%;
+	overflow: auto;
+	background-image: url(images/chimney-exhaust-gases-factory-60575.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+#paracontainer .imagecig img{
+	height: 300px;
+	width: 400px;
+	object-fit: cover;
+	padding: 5px;
+	float:right;
+	z-index: 1;
+}
+ #paracontainer figcaption{
+	position: absolute;
+	z-index: 2;
+	text-align: center;
+	background-color: rgba(0,0,0,0.7);
+	color: #ffffff;
+	margin-top: 243px;
+	margin-left:1032px;
+	font-size: 15px;
+	width: 380px;
+	padding: 10px;
+	/*display: none; */
+	font-family:"Comic Sans MS";
+}
+.chapter2 #paracontainer2img{
+	color: #141F3A;
+	background-color: #9CF0E5;
+	padding: 30px;
+	overflow: auto;
+	height: 300px;
+	width: 100%;
+	background-image: url(images/animal-aquatic-corals-847393.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#paracontainer2 .imageairpol img{
+	height: 300px;
+	width: 400px;
+	object-fit: cover;
+	padding: 5px;
+	float:left;
+	z-index: 1;
+}
+ #paracontainer2 figcaption{
+	position: absolute;
+	z-index: 3;
+	text-align: center;
+	background-color: rgba(0,0,0,0.7);
+	color: #ffffff;
+	margin-top: 263px;
+	margin-left:5px;
+	font-size: 15px;
+	width: 380px;
+	padding: 10px;
+	/*display: none; */
+	font-family:"Comic Sans MS";
+}
+#paracontainer3img{
+	color: white;
+	height: 300px;
+	width: 100%;
+	background-color: rgba(0,0,0,0.9);
+	padding: 30px;
+	overflow: auto;
+	background-image: url(images/beach-2089936_1280.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#paracontainer3 .poseidon img{
+	height: 300px;
+	width: 400px;
+	object-fit: cover;
+	float:right;
+
+	}
+ #paracontainer3 figcaption{
+	position: absolute;
+	z-index: 3;
+	text-align: center;
+	background-color: rgba(0,0,0,0.7);
+	color: white;
+	display: block;
+	margin-top: 260px;
+	margin-left:729px;
+	font-size: 15px;
+	width: 380px;
+	padding: 10px;
+	/*display: none; */
+	font-family:"Comic Sans MS";
+}
+footer {
+
+	text-align:center;
+	padding: 1px;
+	color: white;
+	font-family: Marker Felt, fantasy;
+	background-color: black;
+	width: 100%;
+	position: relative;
+	left:0;
+	clear: both;
+
+}
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}

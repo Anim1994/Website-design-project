@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chapter 5</title>
+<link rel="stylesheet" href="styles5.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function() { // do not delete this line
+$('.wrapper').hide();
+$('footer').hide();
+$('.wrapper').fadeIn('slow');
+
+$('#paracontainer').hide();
+$('#paracontainer2').hide();
+$('#paracontainer3').hide();
+$('#heads').click( function(){
+	$('#paracontainer').stop().slideDown('slow');
+	$('#paracontainer2').stop().slideDown('slow');
+	$('footer').fadeIn(3000);
+}) 
+$('#tails').click( function(){
+	$('#paracontainer').fadeIn('slow');
+	$('#paracontainer3').fadeIn('slow');
+	$('footer').show(3000);
+}) 
+}); // do not delete this line
+</script>
+
+</head>
+<body>   
+	<header>
+	<h1>Chapter 5</h1> 
+	</header> 
+
+	<div class= 'navbar'>
+		<ul>  
+			<li><a href="index.html"><i class="fa fa-bolt" aria-hidden="true">Chapter:1</i></a></li>
+			<li><a href="chapter2.html"><i class="fa fa-tint" aria-hidden="true">Chapter:2</i></a> </li>
+			<li><a href="chapter3.html"><i class="fa fa-tree" aria-hidden="true">Chapter:3</i></a></li>
+			<li><a href="chapter4.html"><i class="fa fa-area-chart" aria-hidden="true">Chapter:4</i></a></li>
+			<li><a href="chapter5.html"><i class="fa fa-bolt" aria-hidden="true">Chapter:5</i></a></li>
+		</ul>
+	</div>
+
+<div class = 'wrapper'>
+<div class= 'chapter5'>
+	<h1> The end? </h1>
+	<br>
+	<br>
+	<div id ='firstrow'>
+			<p> Anim flips a coin.
+				<br><br>
+				<button id ='heads'> Heads </button>
+				<button id ='tails'> Tails </button>
+				<br>
+				<br>
+	</div>			
+	<div id= 'paracontainer'>
+		<div class ='image1'> 
+			 <img src = 'images/electrician-1969132_1920.png' alt = 'bird'>
+			 <figcaption> "The God of Lightning</figcaption>
+		</div>	
+	</div>
+
+	<div id ='paracontainer2'> <!-- choice one -->
+		<div class ='image2'> 
+			 <img src = 'images/crete-1981236_1920.jpg' alt = 'path'>
+			 <figcaption>Anim goes down a secret path</figcaption>
+			<p>  It's heads. Anim knows what must be done. He begins the preparations to summon the almighty, omnipotent Zeus. 'Hail Zeus, King of all Gods, Ruler of Mount Olympus. I call upon you, for I have successfully accomplished the tasks you had given me'.
+				<br> Lightning starts falling everywhere but they all dodge Anim. <strong> The mighty Zeus finally appears </strong>.
+				<br> Servant, it seems you were able to do all the things I asked you to.
+				<br> 'Yes, my lord. Please now forgive us mortals' -Anim.
+				<br> 'Very well, I give humans one more chance. Give me all the items you have collected.'-Zeus.
+				<br> Anim places the items and Zeus vanishes in to thin air. Humanity is forgiven as the world seems to be a calmer place. But for how <strong> long </strong>?.
+
+		</div>
+	</div>	
+	<div id ='paracontainer3'> <!-- choice two -->
+		<div class ='image3'> 
+			 <img src = 'images/ecology-2985781_1920.jpg' alt = 'pots'>
+			 <figcaption> Anim sees a child taking care of plants.</figcaption>
+			 <p><br> It's tails, Anim grins. Anim knows what must be done. He begins the preparations to summon the almighty, omnipotent Zeus. 'Hail Zeus, King of all Gods, Ruler of Mount Olympus.
+			 	<br> Lightning starts falling everywhere but they all dodge Anim. <strong> The mighty Zeus finally appears </strong>.
+			 	<br> Anim tells Zeus that he knows Zeus used him to get these items, manipulated him by threatening the existence of human kind. He asks Zeus to forgive humans before submitting the items.
+			 	<br> Zeus laughs and scorns him. Yet, Zeus was desperate to get the items. So, he calms the storms.
+			 	<br> Anim places the items but before that he whispers some words in to the jar. <br>
+			 	<br> Zeus approaches to take the items. As soon as Zeus holds the jar something out of the wild happens. Zeus gets zoomed in and trapped inside the jar. <br>
+			 	Anim was no ordinary human for he had very strong knowledge about the deities and was aware that with a certain spell chanted unto the jar, he could even trap the mighty Zeus himself. Anim locks Zeus away somewhere safe. For the remaining items, he smashed them and burned them together. An green aura was released which Anim inhaled completely. There was something different about it. Mother Gaia approaches out of nowhere and tells Anim that he did something unforgivable by trying to outsmart the Gods. He is now cursed as the Earths slave and must forever protect and look after the environment.
+			 	
+			 		
+	</div>
+</div>	
+</div>
+<footer>
+<p> Follow Anim for more stories 
+	<br>
+	<br>
+<a href="http://www.snapchat.com/" class="fa fa-snapchat-ghost"></a>
+<a href="http://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="http://www.google.com/" class="fa fa-google"></a>
+<a href="http://www.linkedin.com/" class="fa fa-linkedin"></a>
+<a href="http://www.instagram.com/" class="fa fa-instagram"></a>	
+</footer>
+
+
+</body>
+</html>
